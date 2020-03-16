@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Icon Web -->
+    <link rel="icon" href="img/icon-portfolio.png" />
+    <title>Contact - Arif Ramadhani</title>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome Icons CSS file -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS file -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Aos Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Start Preloader Area -->
+    <div class="preloader-area">
+      <div class="ring-loader">
+        Loading
+        <span class="span-ring"></span>
+      </div>
+    </div>
+    <!-- End Preloader Area -->
+
+    <!-- Start Header Area -->
+    <header class="header_area">
+      <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#contact-me"
+            ><img src="img/logo-arip.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="#contact-me">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Main Area -->
+    <main class="site-main">
+      <!-- Contact -->
+      <section class="contact-me" id="contact-me">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-12 text-center pt-3">
+              <h1 class="text-uppercase title-text title-1">Get In Touch</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container mb-5" data-aos="zoom-in" data-aos-duration="3000">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 ">
+              <iframe
+                class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0468793082223!2d106.86171701458899!3d-6.25755519547065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f308f686634d%3A0xd525832158dae7b5!2sBank%20BRI%20Unit%20Cawang!5e0!3m2!1sid!2sid!4v1584163399957!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                frameborder="0"
+                style="border:2px solid #232946;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mb-5">
+              <form
+                id="contact-form"
+                action="contact_form_handler.php"
+                method="POST"
+              >
+                <div class="form-group row">
+                  <div class="col-md-6 mb-4 mb-lg-0">
+                    <input
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <input
+                      name="subject"
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea
+                      name="message"
+                      id=""
+                      class="form-control"
+                      placeholder="Write your message."
+                      cols="30"
+                      rows="10"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-6 mr-auto">
+                    <input
+                      type="submit"
+                      class="btn btn-block button btn-primary text-white py-3 px-5"
+                      value="Send Message"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4 ml-auto contact-info">
+              <div class="bg-white p-3 p-md-5">
+                <h3 class="text-black mb-4">Contact Info</h3>
+                <ul class="list-unstyled footer-link">
+                  <li class="d-block mb-3">
+                    <i class="fas fa-home fa-2x"></i>
+                    <h4 class="d-block text-black mb-0">
+                      <a
+                        href="https://goo.gl/maps/ijvc4U8J6XRN4iEn8"
+                        target="_blank"
+                        >Cililitan - East, Jakarta</a
+                      >
+                    </h4>
+                    <p class="d-block para">Jl. Dewi Sartika No.29-A</p>
+                  </li>
+
+                  <li class="d-block mb-3">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                    <h5 class="d-block text-black mb-0">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6285773778805&text=&source=&data="
+                        >(+62)857-7377-8805</a
+                      >
+                    </h5>
+                    <p class="d-block para">WhatsApp Only</p>
+                  </li>
+
+                  <li class="d-block mb-3">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h5 class="d-block text-black mb-0">
+                      <a href="mailto:arifrmdhni7@gmail.com"
+                        >arifrmdhni7@gmail.com</a
+                      >
+                    </h5>
+                    <p class="d-block para">Send me your query anytime</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End Main Area -->
+
+    <!-- Footer Area -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="logo-footer">
+          <div class="site-logo text-center py-4">
+            <a><img src="img/logo-arip.svg" alt="logo-footer"/></a>
+          </div>
+          <div class="social text-center">
+            <h5 class="text-uppercase">Follow Me</h5>
+            <a href="https://www.facebook.com/arifrmdhni7" target="_blank"
+              ><i class="fab fa-facebook social-media"></i
+            ></a>
+            <a href="https://www.instagram.com/arifrmdhni7/" target="_blank"
+              ><i class="fab fa-instagram social-media"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/arif-ramadhani-158b4b1a4/"
+              target="_blank"
+              ><i class="fab fa-linkedin social-media"></i
+            ></a>
+            <a href="https://twitter.com/Arippper" target="_blank"
+              ><i class="fab fa-twitter social-media"></i
+            ></a>
+          </div>
+          <div class="copyrights text-center">
+            <p class="para">
+              © Arif Ramadhani 2020
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Back-Top -->
+      <div id="back-top">
+        <a title="Go Up" href="#">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+      <!-- End Back-Top -->
+    </footer>
+    <!-- End Footer Area -->
+    <!-- jQuery JS file -->
+    <script src="js/jquery.3.4.1.js"></script>
+
+    <!-- Bootstrap JS file -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Isotope JS library -->
+    <script src="vendor/isotope/isotope.min.js"></script>
+
+    <!-- Magnific Popup Script file -->
+    <script src="vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <!-- Owl-carousel JS file -->
+    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Aos Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Custom JS file -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
