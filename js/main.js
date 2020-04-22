@@ -1,32 +1,31 @@
-  // sticky navigation menu
-  let nav_offset_top = $('.header_area').height() + 50;
+// sticky navigation menu
+let nav_offset_top = $('.header_area').height() + 50;
 
-  function navbarFixed() {
-    if ($('.header_area').length) {
-      $(window).scroll(function() {
-        let scroll = $(window).scrollTop();
-        if (scroll >= nav_offset_top) {
-          $('.header_area .main-menu').addClass('navbar_fixed');
-        } else {
-          $('.header_area .main-menu').removeClass('navbar_fixed');
-        }
-      });
-    }
+function navbarFixed() {
+  if ($('.header_area').length) {
+    $(window).scroll(function () {
+      let scroll = $(window).scrollTop();
+      if (scroll >= nav_offset_top) {
+        $('.header_area .main-menu').addClass('navbar_fixed');
+      } else {
+        $('.header_area .main-menu').removeClass('navbar_fixed');
+      }
+    });
   }
+}
 
-  navbarFixed();
+navbarFixed();
 
-
-$(document).ready(function() {
+$(document).ready(function () {
   let $btns = $('.project-area .button-group button');
 
-  $btns.click(function(e) {
+  $btns.click(function (e) {
     $('.project-area .button-group button').removeClass('active');
     e.target.classList.add('active');
 
     let selector = $(e.target).attr('data-filter');
     $('.project-area .grid').isotope({
-      filter: selector
+      filter: selector,
     });
 
     return false;
@@ -36,7 +35,7 @@ $(document).ready(function() {
 
   $('.project-area .grid .test-popup-link').magnificPopup({
     type: 'image',
-    gallery: { enabled: true }
+    gallery: { enabled: true },
   });
 
   // Owl-carousel
@@ -46,18 +45,16 @@ $(document).ready(function() {
     dots: true,
     responsive: {
       0: {
-        items: 1
+        items: 1,
       },
       544: {
-        items: 2
-      }
-    }
+        items: 2,
+      },
+    },
   });
 
-
-
   // Go to Top
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     if ($(this).scrollTop() > 1000) {
       $('#back-top').addClass('back-top-animation');
     } else {
@@ -66,10 +63,10 @@ $(document).ready(function() {
   });
 
   // Scroll Body to 0px on click
-  $('#back-top a').on('click', function() {
+  $('#back-top a').on('click', function () {
     $('body,html').animate(
       {
-        scrollTop: 0
+        scrollTop: 0,
       },
       1000
     );
